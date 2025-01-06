@@ -1,0 +1,18 @@
+# Bash shopt options
+checkwinsize: true       # Update the values of LINES and COLUMNS after each command
+dotglob: true            # Include filenames beginning with a . in filename expansions
+execfail: false          # Exit immediately if a command executed in a subshell fails
+errexit: false           # Exit immediately if a command exits with a non-zero status
+failglob: false          # Return an error when a pathname expansion fails
+fgstring: false          # Allow strings to be scanned for variable assignments in the foreground
+globstar: false          # Enable the ** globbing operator for recursive directory searching
+lastpipe: false          # Run the last command in a pipeline in the current shell, not in a subshell
+mail: false              # Check for mail at login
+nullglob: false          # Allow a pattern that matches nothing to expand to nothing
+pipefail: false          # Return the exit status of the last command in a pipeline that failed
+posix: false             # Change the behavior to that of a POSIX shell
+promptvars: false        # Allow variable names to appear in the prompt
+shopt: false             # Execute the shopt command without arguments
+sourcepath: false        # Allow sourcing from the PATH environment variable
+strict-arith: false      # Enable strict arithmetic context
+histappend: false        # Append to the history file instead of overwriting it
