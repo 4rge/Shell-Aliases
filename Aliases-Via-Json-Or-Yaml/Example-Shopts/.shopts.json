@@ -1,0 +1,19 @@
+{
+    "checkwinsize": true,
+    "dotglob": true,
+    "execfail": false,
+    "errexit": false,
+    "failglob": false,
+    "fgstring": false,
+    "globstar": false,
+    "lastpipe": false,
+    "mail": false,
+    "nullglob": false,
+    "pipefail": false,
+    "posix": false,
+    "promptvars": false,
+    "shopt": false,
+    "sourcepath": false,
+    "strict-arith": false,
+    "histappend": false
+}
