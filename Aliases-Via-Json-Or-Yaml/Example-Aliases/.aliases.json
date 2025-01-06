@@ -1,0 +1,12 @@
+{
+    "ls": "ls --color=auto",
+    "ll": "ls -lah --color=auto",
+    "la": "ls -A --color=auto",
+    "l": "ls -CF --color=auto",
+    "du": "du -h --si",
+    "df": "df -h",
+    "free": "free -h",
+    "v": "vim",
+    "grep": "grep --color=auto",
+    "cat": "cat --number"
+}
