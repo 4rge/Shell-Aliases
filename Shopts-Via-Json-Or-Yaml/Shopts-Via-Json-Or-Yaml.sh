@@ -1,29 +1,3 @@
-load_aliases() {
-    local aliases_file="$HOME/.aliases.yaml"  # first check for YAML
-    if [ -f "$aliases_file" ]; then
-        if command -v yq > /dev/null; then
-            while IFS="=" read -r key value; do
-                eval "alias \"$key\"=\"$value\""
-            done < <(yq -r '. | to_entries | .[] | "\(.key)=\(.value)"' "$aliases_file")
-        else
-            echo "yq is not installed. Please install it to load YAML aliases."
-        fi
-    else
-        aliases_file="$HOME/.aliases.json"  # if YAML not found, check for JSON
-        if [ -f "$aliases_file" ]; then
-            if command -v jq > /dev/null; then
-                while IFS="=" read -r key value; do
-                    eval "alias \"$key\"=\"$value\""
-                done < <(jq -r 'to_entries | .[] | "\(.key)=\(.value)"' "$aliases_file")
-            else
-                echo "jq is not installed. Please install it to load JSON aliases."
-            fi
-        else
-            echo "No aliases file found. Please create either ~/.aliases.yaml or ~/.aliases.json."
-        fi
-    fi
-}
-
 load_shopts() {
     local shopt_file="$HOME/.shopts.yaml"  # first check for YAML
     if [ -f "$shopt_file" ]; then
@@ -58,6 +32,5 @@ load_shopts() {
     fi
 }
 
-# Load aliases and shopts by calling the functions
-load_aliases  
+# Load shopts by calling the functions
 load_shopts   
