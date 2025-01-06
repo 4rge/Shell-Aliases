@@ -1,0 +1,15 @@
+autocd: true
+cdablevars: false
+checkjobs: true
+clobber: false
+correct: false
+glob: true
+hashall: true
+histappend: true
+hup: true
+interactive: true
+interactivecomments: false
+nullglob: false
+noglob: false
+sharehistory: false
+shwordsplit: false
