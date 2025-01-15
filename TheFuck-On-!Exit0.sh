@@ -2,7 +2,7 @@
 
 function precmd() {
   case "${?}" in
-    0) : ;;
+    0) tine ;;
     *) fuck ;;
   esac
 }
